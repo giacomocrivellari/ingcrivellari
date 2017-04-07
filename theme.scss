@@ -136,3 +136,10 @@ body > * {
   background-repeat: none;
   background-position: center ;
 }
+
+.navbar {
+  	position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+  
