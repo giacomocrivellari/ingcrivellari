@@ -139,7 +139,16 @@ body > * {
 
 .navbar {
   	position: fixed;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    top: 0;
+    width: 100%;
+  	z-index: 2;
+}
+
+.body {
+  	z-index: 1;
+}
+
+.top {
+  	z-index: 3;
 }
   
