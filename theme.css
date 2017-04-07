@@ -1,5 +1,5 @@
 /*!
-* Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+* Bootstrap 4.0.0-alpha.6 (https://getbootstrap.com)
 * Copyright 2011-2017 The Bootstrap Authors
 * Copyright 2011-2017 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -3589,6 +3589,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       max-width: 100%; } }
 
 .container-fluid {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -4743,8 +4744,11 @@ button.list-group-item-danger {
 
 .nav-tabs {
   border-bottom: 0.0625rem solid #ddd; }
-  .nav-tabs .nav-item {
+  .nav-tabs .nav-item,
+  .nav-tabs .nav-link {
     margin-bottom: -0.0625rem; }
+  .nav-tabs .nav-item .nav-link {
+    margin-bottom: 0; }
   .nav-tabs .nav-link {
     border: 0.0625rem solid transparent;
     border-top-left-radius: 0.25rem;
@@ -4768,11 +4772,10 @@ button.list-group-item-danger {
 
 .nav-pills .nav-link {
   border-radius: 0.25rem; }
-
-.nav-pills .nav-link.active,
-.nav-pills .nav-item.show .nav-link {
-  color: #fff;
-  background-color: black; }
+  .nav-pills .nav-link.active,
+  .show .nav-pills .nav-link {
+    color: #fff;
+    background-color: black; }
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -6001,3 +6004,10 @@ body > * {
   background-size: cover;
   background-repeat: none;
   background-position: center; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */ }
