@@ -6102,6 +6102,9 @@ a.text-dark:hover, a.text-dark:focus {
 html, body {
   height: 100%; }
 
+.serif {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
 .cover {
   min-height: 100%;
   display: flex;
