@@ -23,18 +23,20 @@ $theme-colors: (
   secondary: #4f70ce,
   light: #f3f3f3,
   dark: #151515,
-  info: #ccc,
+  info: #e7ebef,
   success: #28a745,
   warning: #ffc107,
   danger: #dc3545
 );
 
-$body-bg: white;
+$body-bg: map-get($theme-colors, 'light');
 $body-color: #333;
 
 
 $body-color-inverse: invert($body-color) !default;
-$link-color: #12bbad;
+$link-color: #151515;
+
+
 
 // Fonts
 $font-family-base: Raleway;
@@ -50,6 +52,12 @@ $spacer: 1.5rem;
 
 $font-size-base: 0.95rem;
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 960px);
+
+//Cards
+
+$card-border-color: 	none;
+$card-bg:							$body-bg;
+
 @import 'bootstrap-4.0.0';
 
  
@@ -61,6 +69,10 @@ html,body {
 	min-height:100%;
   display:flex;
   align-items:center
+}
+
+a > .card:hover {
+ background: theme-color("info");
 }
 
 
