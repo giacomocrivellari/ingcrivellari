@@ -53,3 +53,11 @@ html,body {
 .serif {
 	font-family: $headings-font-family;
 }
+
+.navbar {
+  transition: opacity .5s ease-out;
+}
+
+.navbar-ontop {
+  opacity: 0;
+}
