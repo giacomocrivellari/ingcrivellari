@@ -43,8 +43,9 @@ $spacer: 1.5rem;
 $border-radius: 0rem;
 $border-radius-sm: 0rem;
 $border-radius-lg: 0rem;
+$enable-responsive-font-sizes: true;
 
-@import 'bootstrap-4.2.1';
+@import 'bootstrap-4.3.1';
 
 html,body {
    height:100%;
